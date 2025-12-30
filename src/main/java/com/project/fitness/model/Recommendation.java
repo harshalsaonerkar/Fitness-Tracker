@@ -39,6 +39,7 @@ public class Recommendation {
     private String type;
 
     @Column(length = 2000)
+    @JsonIgnore
     private String recommendation;
 
     @JdbcTypeCode(SqlTypes.JSON)
